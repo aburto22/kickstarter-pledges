@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 13px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: radial-gradient(farthest-corner at 50% 60%, rgb(224, 146, 0) 20%, rgb(255, 184, 51));
+  background-attachment: fixed;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#container {
+  padding: 2rem;
+
+  > svg {
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  #tooltip {
+    font-size: 0.9rem;
+  }
+}
