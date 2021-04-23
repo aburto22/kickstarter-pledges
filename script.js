@@ -12,7 +12,7 @@ container.append("h1").text("Kickstarter Pledges").attr("id", "title");
 
 container
   .append("h2")
-  .text("Successful kickstarter organized based on pledged amount.")
+  .text("Kickstarter campaigns organized based on pledged amount.")
   .attr("id", "description");
 
 const svg = d3
@@ -164,7 +164,7 @@ fetch(
       .attr("id", "legend")
       .attr(
         "transform",
-        `translate(${paddingX + 50}, ${h - paddingBottom + 20})`
+        `translate(${paddingX + 250}, ${h - paddingBottom + 20})`
       );
 
     legend
@@ -195,6 +195,13 @@ fetch(
       .attr("y1", 0)
       .attr("y2", 18)
       .attr("stroke", "rgba(50, 50, 50, 0.5)");
+
+    legend
+      .append("text")
+      .text("Amount Pledged: ")
+      .attr("x", -125)
+      .attr("y", 13)
+      .attr("font-weight", "bold");
 
     const tooltip = svg
       .append("g")
