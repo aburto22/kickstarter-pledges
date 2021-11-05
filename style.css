@@ -12,39 +12,44 @@ body {
   font-family: "Open Sans", sans-serif;
   background: radial-gradient(farthest-corner at 50% 60%, #e09200 20%, #ffb833);
   background-attachment: fixed;
-}
-
-#root {
   min-height: 100vh;
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-#container {
-  padding: 2rem;
+header {
+  margin: 1.5rem 1rem;
 }
-#container > svg {
-  max-width: 100%;
-}
-#container h1 {
+
+h1 {
   font-size: 3rem;
-}
-#container h2 {
-  font-size: 1.5rem;
-}
-#container h1, #container h2 {
   text-align: center;
   margin-bottom: 0.5rem;
 }
-#container #tooltip {
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+main {
+  padding: 1rem;
+}
+main svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+main #tooltip {
   font-size: 0.9rem;
 }
 
 footer {
   text-align: center;
   font-size: 0.85rem;
-  padding: 0.5rem;
+  margin: 1.5rem 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

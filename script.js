@@ -6,17 +6,8 @@ const paddingX = 215;
 const paddingTop = 30;
 const paddingBottom = 105;
 
-const container = d3.select("#root").append("div").attr("id", "container");
-
-container.append("h1").text("Kickstarter Pledges").attr("id", "title");
-
-container
-  .append("h2")
-  .text("Kickstarter campaigns organized based on pledged amount.")
-  .attr("id", "description");
-
 const svg = d3
-  .select("#container")
+  .select("main")
   .append("svg")
   .attr("width", w)
   .attr("height", h)

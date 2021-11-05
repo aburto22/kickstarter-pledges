@@ -11,34 +11,36 @@
 body {
   font-family: 'Open Sans', sans-serif;
   background: radial-gradient(farthest-corner at 50% 60%, rgb(224, 146, 0) 20%, rgb(255, 184, 51));
-  background-attachment: fixed;
-}
-
-#root {
+  background-attachment: fixed;  
   min-height: 100vh;
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-#container {
-  padding: 2rem;
+header {
+  margin: 1.5rem 1rem;
+}
 
-  > svg {
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+main {
+  padding: 1rem;
+
+  svg {
     max-width: 100%;
-  }
-
-  h1 {
-    font-size: 3rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-  
-  h1, h2 {
-    text-align: center;
-    margin-bottom: 0.5rem;
+    height: auto;
+    display: block;
+    margin: auto;
   }
 
   #tooltip {
@@ -49,5 +51,5 @@ body {
 footer {
   text-align: center;
   font-size: 0.85rem;
-  padding: 0.5rem;
+  margin: 1.5rem 1rem;;
 }
